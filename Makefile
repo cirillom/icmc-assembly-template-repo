@@ -1,5 +1,7 @@
-MONTADOR ?= bin/montador
-SIM ?= bin/sim
+SIMULATORMOD ?= modules/ICMC-Processor-Simulator
+MONTADOR ?= $(SIMULATORMOD)/bin/montador
+SIM ?= $(SIMULATORMOD)/bin/sim
+
 PREPROCESSORMOD ?= modules/ICMC-assembly-preprocessor
 PREPROCESSOR ?= $(PREPROCESSORMOD)/src/preprocessor.py
 VARS_PROCESSOR ?= $(PREPROCESSORMOD)/src/variables.py
