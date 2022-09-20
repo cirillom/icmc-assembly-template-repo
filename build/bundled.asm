@@ -1,47 +1,20 @@
 jmp main
-#define teto_len 41
-teto : var #41
-	static teto + #0, $blue_hashtag
-	static teto + #1, $blue_hashtag
-	static teto + #2, $blue_hashtag
-	static teto + #3, $blue_hashtag
-	static teto + #4, $blue_hashtag
-	static teto + #5, $blue_hashtag
-	static teto + #6, $blue_hashtag
-	static teto + #7, $blue_hashtag
-	static teto + #8, $blue_hashtag
-	static teto + #9, $blue_hashtag
-	static teto + #10, $blue_hashtag
-	static teto + #11, $blue_hashtag
-	static teto + #12, $blue_hashtag
-	static teto + #13, $blue_hashtag
-	static teto + #14, $blue_hashtag
-	static teto + #15, $blue_hashtag
-	static teto + #16, $blue_hashtag
-	static teto + #17, $blue_hashtag
-	static teto + #18, $blue_hashtag
-	static teto + #19, $blue_hashtag
-	static teto + #20, $blue_hashtag
-	static teto + #21, $blue_hashtag
-	static teto + #22, $blue_hashtag
-	static teto + #23, $blue_hashtag
-	static teto + #24, $blue_hashtag
-	static teto + #25, $blue_hashtag
-	static teto + #26, $blue_hashtag
-	static teto + #27, $blue_hashtag
-	static teto + #28, $blue_hashtag
-	static teto + #29, $blue_hashtag
-	static teto + #30, $blue_hashtag
-	static teto + #31, $blue_hashtag
-	static teto + #32, $blue_hashtag
-	static teto + #33, $blue_hashtag
-	static teto + #34, $blue_hashtag
-	static teto + #35, $blue_hashtag
-	static teto + #36, $blue_hashtag
-	static teto + #37, $blue_hashtag
-	static teto + #38, $blue_hashtag
-	static teto + #39, $blue_hashtag
-	static teto + #40, #'\0'
+#define teto_len 14
+teto : var #14
+	static teto + #0, $blue_G
+	static teto + #1, $blue_u
+	static teto + #2, $blue_s
+	static teto + #3, $blue_t
+	static teto + #4, $blue_a
+	static teto + #5, $blue_v
+	static teto + #6, $blue_o
+	static teto + #7, $blue_space
+	static teto + #8, $blue_M
+	static teto + #9, $blue_o
+	static teto + #10, $blue_u
+	static teto + #11, $blue_r
+	static teto + #12, $blue_a
+	static teto + #13, #'\0'
 #define borda_len 40
 borda : var #40
 	static borda + #0, $blue_hashtag
@@ -86,6 +59,9 @@ borda : var #40
 	static borda + #39, #'\0'
 
 main:
+    loadn r0, #20
+    loadn r1, #40
+    loadn r2, #15
 
     call map
 

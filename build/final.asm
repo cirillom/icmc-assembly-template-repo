@@ -1,46 +1,19 @@
 jmp main
-teto : var #41
-	static teto + #0, #3107
-	static teto + #1, #3107
-	static teto + #2, #3107
-	static teto + #3, #3107
-	static teto + #4, #3107
-	static teto + #5, #3107
-	static teto + #6, #3107
-	static teto + #7, #3107
-	static teto + #8, #3107
-	static teto + #9, #3107
-	static teto + #10, #3107
-	static teto + #11, #3107
-	static teto + #12, #3107
-	static teto + #13, #3107
-	static teto + #14, #3107
-	static teto + #15, #3107
-	static teto + #16, #3107
-	static teto + #17, #3107
-	static teto + #18, #3107
-	static teto + #19, #3107
-	static teto + #20, #3107
-	static teto + #21, #3107
-	static teto + #22, #3107
-	static teto + #23, #3107
-	static teto + #24, #3107
-	static teto + #25, #3107
-	static teto + #26, #3107
-	static teto + #27, #3107
-	static teto + #28, #3107
-	static teto + #29, #3107
-	static teto + #30, #3107
-	static teto + #31, #3107
-	static teto + #32, #3107
-	static teto + #33, #3107
-	static teto + #34, #3107
-	static teto + #35, #3107
-	static teto + #36, #3107
-	static teto + #37, #3107
-	static teto + #38, #3107
-	static teto + #39, #3107
-	static teto + #40, #'\0'
+teto : var #14
+	static teto + #0, #3143
+	static teto + #1, #3189
+	static teto + #2, #3187
+	static teto + #3, #3188
+	static teto + #4, #3169
+	static teto + #5, #3190
+	static teto + #6, #3183
+	static teto + #7, #3104
+	static teto + #8, #3149
+	static teto + #9, #3183
+	static teto + #10, #3189
+	static teto + #11, #3186
+	static teto + #12, #3169
+	static teto + #13, #'\0'
 borda : var #40
 	static borda + #0, #3107
 	static borda + #1, #3104
@@ -84,6 +57,9 @@ borda : var #40
 	static borda + #39, #'\0'
 
 main:
+    loadn r0, #20
+    loadn r1, #40
+    loadn r2, #15
 
     call map
 
@@ -108,9 +84,10 @@ before_jmp_print:
 
 end_print:
     rts
+
 map:
     loadn r0, #teto
-    loadn r1, #-1
+    loadn r1, #13
     call start_print
 
     loadn r0, #borda
@@ -199,7 +176,7 @@ map:
     call start_print
 
     loadn r0, #teto
-    loadn r1, #1159
+    loadn r1, #1173
     call start_print
 
     rts

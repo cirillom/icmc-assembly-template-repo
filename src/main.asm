@@ -1,5 +1,8 @@
 
 main:
+    loadn r0, #20
+    loadn r1, #40
+    loadn r2, #15
 
     call map
 
