@@ -4,7 +4,7 @@ SIM ?= $(SIMULATORMOD)/bin/sim
 
 PREPROCESSORMOD ?= modules/ICMC-assembly-preprocessor
 PREPROCESSOR ?= $(PREPROCESSORMOD)/src/preprocessor.py
-VARS_PROCESSOR ?= $(PREPROCESSORMOD)/src/variaveis.py
+VARS_PROCESSOR ?= $(PREPROCESSORMOD)/src/variables.py
 
 
 CHARMAP = res/charmap/charmap.mif
