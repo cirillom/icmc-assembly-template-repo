@@ -30,6 +30,8 @@ clean:
 run: $(MIF_OUT) $(CHARMAP)
 	$(SIM) $(MIF_OUT) $(CHARMAP)
 
+simulator:
+	cd $(SIMULATORMOD) && sudo make
 
 $(MIF_OUT): $(FULL_PREP)
 	@mkdir -p build

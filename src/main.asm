@@ -4,8 +4,6 @@ main:
     loadn r1, $position(eval((40-int(defs["teto_len"]))//2),0)
     call start_print
     halt
-    ;r2 is the next character
-    ;r3 is a temporary value
 
 start_print:
     loadi r2, r0
@@ -17,6 +15,8 @@ start_print:
     jeq before_jmp_print
     outchar r2, r1
     inc r1
+    ;r2 is the next character
+    ;r3 is a temporary value
 
 before_jmp_print:
     inc r0
