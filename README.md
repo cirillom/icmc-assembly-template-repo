@@ -1,6 +1,6 @@
 # Template project for the ICMC Processor Simulator with the preprocessor (Linux)
 
-**THIS REPO HAS A TEMPLATE WITHOUT THE PREPROCESSOR - ACCESS BRANCH ``` NO-PREPROCESSOR ```
+**THIS REPO HAS A TEMPLATE WITHOUT THE PREPROCESSOR - ACCESS BRANCH ``` NO-PREPROCESSOR ``` **
 
 ### Dependencies
 In order to clone this repository with the needed submodules you should clone it with ``` git clone --recurse-submodules https://github.com/cirillom/icmc-assembly-template-repo.git ```.
