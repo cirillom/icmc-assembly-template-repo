@@ -3,7 +3,7 @@
 **THIS REPO HAS A TEMPLATE WITHOUT THE PREPROCESSOR - ACCESS BRANCH ``` NO-PREPROCESSOR ``` **
 
 ### Dependencies
-In order to clone this repository with the needed submodules you should clone it with ``` https://github.com/studas/icmc-assembly-template-repo.git ```.
+In order to clone this repository with the needed submodules you should clone it with ``` git clone --recurse-submodules https://github.com/studas/icmc-assembly-template-repo.git ```.
 
 However, if you alreary cloned it and forgot to run the ``` --recurse-submodules ``` you can download them with ```git submodule update --init --recursive```.
 
