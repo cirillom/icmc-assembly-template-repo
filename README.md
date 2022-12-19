@@ -10,7 +10,9 @@ However, if you alreary cloned it and forgot to run the ``` --recurse-submodules
 You'll also need the simulator binarie files, in order to install it just type ``` make simulator ``` and everything will be done for you.
 
 <br />
+
 ### Usage
+
 **Don't change _bootstrapper.asm_**
 You can create any _.asm_ and _.vars_ files under _src/_, however at the moment you cannot work with subdirectories.
 
